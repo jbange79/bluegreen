@@ -1,0 +1,49 @@
+{
+ "properties": {
+  "displayName": "Test Log Analytics for Key Vault",
+  "policyType": "Custom",
+  "description": "Testing",
+  "metadata": {
+   "category": "Monitoring",
+   "version": "1.0",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/fb42393b-7efe-4077-a7e0-5d278b93ebc7"
+   },
+   "createdBy": "725997f1-a16f-4980-a315-400e60d015bc",
+   "createdOn": "2022-01-18T21:36:18.6112616Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "Location": {
+    "type": "string",
+    "metadata": {
+     "displayName": "location",
+     "strongType": "location",
+     "portalReview": true
+    },
+    "allowedValues": [
+     "centralus",
+     "eastus2"
+    ],
+    "defaultValue": "centralus"
+   }
+  },
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "Deploy Diagnostic Settings for Key Vault to Log Analytics workspace_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bef3f64c-5290-43b7-85b0-9b254eef4c47",
+    "parameters": {
+     "logAnalytics": {
+      "value": "[parameters('Location')]"
+     }
+    },
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/fb42393b-7efe-4077-a7e0-5d278b93ebc7/providers/Microsoft.Authorization/policySetDefinitions/c11aa24edb50446ca8864244",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "c11aa24edb50446ca8864244"
+}
