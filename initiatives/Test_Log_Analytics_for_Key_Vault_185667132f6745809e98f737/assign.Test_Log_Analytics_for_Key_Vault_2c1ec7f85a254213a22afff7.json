@@ -1,0 +1,31 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "d340ffbc-d234-430d-8412-2beb18022bd7",
+  "tenantId": "5a9bb941-ba53-48d3-b086-2927fea7bf01",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Test Log Analytics for Key Vault",
+  "policyDefinitionId": "/subscriptions/fb42393b-7efe-4077-a7e0-5d278b93ebc7/providers/Microsoft.Authorization/policySetDefinitions/185667132f6745809e98f737",
+  "scope": "/subscriptions/fb42393b-7efe-4077-a7e0-5d278b93ebc7",
+  "notScopes": [],
+  "parameters": {},
+  "metadata": {
+   "assignedBy": "Jason Bange",
+   "parameterScopes": {},
+   "createdBy": "725997f1-a16f-4980-a315-400e60d015bc",
+   "createdOn": "2022-01-19T16:10:38.2272742Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/subscriptions/fb42393b-7efe-4077-a7e0-5d278b93ebc7/providers/Microsoft.Authorization/policyAssignments/2c1ec7f85a254213a22afff7",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "2c1ec7f85a254213a22afff7",
+ "location": "centralus"
+}
